@@ -1,0 +1,3 @@
+{
+    "mongoURI": "mongodb+srv://babanila:baba@cluster-gedanken-sk2tr.mongodb.net/test?retryWrites=true&w=majority"
+}
