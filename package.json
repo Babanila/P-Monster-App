@@ -1,7 +1,7 @@
 {
-    "name": "data-sync-backend",
+    "name": "P-Monster-App",
     "version": "1.0.0",
-    "description": "thhis app provide services for data synchronization and providing a restful api",
+    "description": "this app provide services for data synchronization and providing a restful api from the backend while the frontend is design using react.",
     "main": "index.js",
     "scripts": {
         "start": "webpack-dev-server --open --hot --mode development",
@@ -13,19 +13,20 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Babanila/data-sync-backend.git"
+        "url": "git+https://github.com/Babanila/P-Monster-App.git"
     },
     "keywords": [
         "web",
         "react",
-        "calculator"
+        "data",
+        "sync"
     ],
     "author": "Babajide Williams",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/Babanila/data-sync-backend/issues"
+        "url": "https://github.com/Babanila/P-Monster-App/issues"
     },
-    "homepage": "https://github.com/Babanila/data-sync-backend#readme",
+    "homepage": "https://github.com/Babanila/P-Monster-App#readme",
     "dependencies": {
         "@emotion/core": "^10.0.22",
         "@emotion/styled": "^10.0.23",
@@ -87,7 +88,7 @@
     },
     "lint-staged": {
         "*.{js,jsx}": "eslint",
-        "*.{js,json,jsx}": [
+        "*.{js,json,jsx,css,md}": [
             "prettier --write",
             "git add"
         ]
