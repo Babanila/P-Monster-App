@@ -13,6 +13,7 @@ const SectionDiv = styled.div`
     align-items: center;
     padding: 2em;
     color: #000000;
+    font-size: 1.5rem;
 `;
 
 const AboutH3 = styled.h3``;
@@ -20,25 +21,24 @@ const AboutH3 = styled.h3``;
 const AboutLi = styled.li`
     width: 60%;
     padding-left: 25%;
+    font-size: 1.5rem;
 `;
 
 const About = () => {
     return (
         <AboutDiv>
             <SectionDiv>
-                <AboutH3>Components </AboutH3>
-                <AboutLi> Header: Shows the title of the current page.</AboutLi>
-                <AboutLi>Drawer: It&apos;s used to navigate through the web application.</AboutLi>
-                <AboutLi>Main Page: The content goes here.</AboutLi>
+                <AboutH3>Components (Backend) </AboutH3>
+                <AboutLi>Create restful API for the frontend web application.</AboutLi>
+                <AboutLi> Uses MongoDb Atlas</AboutLi>
+                <AboutLi>Uses Routing</AboutLi>
             </SectionDiv>
 
             <SectionDiv>
-                <AboutH3>The functionalities</AboutH3>
-                <AboutLi> Display all the weather available</AboutLi>
-                <AboutLi>
-                    Search the weather list using location city name e.g alska, ca etc.
-                </AboutLi>
-                <AboutLi> Select a single location by click on it</AboutLi>
+                <AboutH3>The functionalities(Frontend)</AboutH3>
+                <AboutLi> Display all the Hacker news top stories available</AboutLi>
+                <AboutLi>Filter stories using date from and date to</AboutLi>
+                <AboutLi> Display single story details by click on it</AboutLi>
             </SectionDiv>
         </AboutDiv>
     );
