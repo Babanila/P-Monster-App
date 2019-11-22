@@ -21,7 +21,7 @@ mongoose
     .then(() => console.log("MongoDB Connected..."))
     .catch(err => console.log(err));
 
-// Creation of stories routes
+// Creation of routes for stories
 app.use("/stories", require("./routes/stories"));
 
 app.listen(PORT, () => {

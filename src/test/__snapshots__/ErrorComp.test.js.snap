@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorComp Component should renders without crashing 1`] = `
+<div
+  className="css-sfgzt9"
+>
+  Error:
+  <span
+    className="error-message css-wjo8c8"
+    data-testid="errorMessage"
+  >
+    There is an error
+  </span>
+</div>
+`;

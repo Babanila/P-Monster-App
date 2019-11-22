@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import MainView from "./MainView";
 import StoryDetails from "./StoryDetails";
 import About from "./About";
+import NotFoundPage from "./NotFoundPage";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Route path="/" exact component={MainView} />
                 <Route path="/story/:id" component={StoryDetails} />
                 <Route path="/about" exact component={About} />
+                <Route component={NotFoundPage} />
             </Switch>
         </Router>
     );
