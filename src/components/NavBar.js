@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const NavBarDiv = styled.div`
     width: 100%;
-    height: 10%;
+    height: auto;
     margin-bottom: 5em;
     display: flex;
     flex-direction: row;
@@ -12,7 +12,6 @@ const NavBarDiv = styled.div`
     justify-content: space-between;
     align-items: center;
     color: white;
-    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
@@ -22,6 +21,7 @@ const NavBarDiv = styled.div`
 
 const NavBarUl = styled.ul`
     width: 15%;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -29,11 +29,21 @@ const NavBarUl = styled.ul`
     list-style: none;
     margin: 0;
     padding: 0;
+    @media (min-width: 768px) and (max-width: 1200px) {
+        width: 25%;
+        font-size: 1.5rem;
+    }
+    @media (min-width: 401px) and (max-width: 767px) {
+        width: 40%;
+        font-size: 1.2rem;
+    }
+    @media (min-width: 0px) and (max-width: 400px) {
+        display: none;
+    }
 `;
 
-const NavBarLi = styled.li`
-    font-size: 30px;
-`;
+// font-size: 30px;
+const NavBarLi = styled.li``;
 
 const NavBarLink = styled(Link)`
     color: white;

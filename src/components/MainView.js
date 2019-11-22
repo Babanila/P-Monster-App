@@ -27,6 +27,15 @@ const SortDiv = styled.div`
     left: 0;
     font-size: 1.2rem;
     background-color: white;
+
+    @media (min-width: 541px) and (max-width: 767px) {
+        width: 100%;
+        height: 10%;
+        font-size: 1rem;
+    }
+    @media (min-width: 0px) and (max-width: 540px) {
+        display: none;
+    }
 `;
 
 const Span = styled.span`
